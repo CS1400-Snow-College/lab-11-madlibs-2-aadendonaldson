@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\bin\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.exe
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\bin\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.deps.json
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\bin\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.runtimeconfig.json
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\bin\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.dll
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\bin\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.pdb
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.AssemblyInfo.cs
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.sourcelink.json
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.dll
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\refint\lab-11-madlibs-2-aadendonaldson.dll
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.pdb
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\lab-11-madlibs-2-aadendonaldson.genruntimeconfig.cache
+C:\Users\User\Desktop\my-code-dir\lab-11-madlibs-2-aadendonaldson\obj\Debug\net8.0\ref\lab-11-madlibs-2-aadendonaldson.dll
