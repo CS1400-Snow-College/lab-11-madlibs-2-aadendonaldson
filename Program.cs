@@ -1,49 +1,76 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using System.Globalization;
+using System.Linq.Expressions;
+using System.Runtime.InteropServices.Marshalling;
 using System.Runtime.Serialization.Json;
-
-string generatedStory1 = "story1.txt";
-string generatedStory2 = "story2.txt";
-
-List<string> firstStory = new List<string>(File.ReadAllLines(generatedStory1));
-List<string> secondStory = new List<string>(File.ReadAllLines(generatedStory2));
+class Program {
+    static void Main(string[] filenames) {
+       // List<string> firstStory = new List<string>(File.ReadAllLines("story1.txt"));
+//List<string> secondStory = new List<string>(File.ReadAllLines("story2.txt"));
 Dictionary<string, List<string>> answers = new Dictionary<string, List<string>>();
 
 // assign values to keys like keys are indexes in an array
 answers["verb"] = new List<string>();
 answers["adjective"] = new List<string>();
-answers["nown"] = new List<string>();
-answers["plural-nown"] = new List<string>();
+answers["noun"] = new List<string>();
+answers["plural-noun"] = new List<string>();
 answers["place"] = new List<string>();
-
-// check number of unique keys
-//Debug.Assert(answers.Count == 3);
-
-// ask if a key is in the dictionary
-///Debug.Assert(categoryToWords.ContainsKey("fruit"));
-//Debug.Assert(!categoryToWords.ContainsKey("country"));
-
-// get the value for a given key using the key like an index into an array
-//Debug.Assert(categoryToWords["fruit"].Count == 0);
+answers["past-tense-verb"] = new List<string>();
 
 answers["adjective"].Add("blue");
 answers["adjective"].Add("short");
 answers["adjective"].Add("young");
 
-answers["verb"].Add("blue");
-answers["verb"].Add("short");
-answers["verb"].Add("young");
+answers["past-tense-verb"].Add("swam");
+answers["past-tense-verb"].Add("ran");
+answers["past-tense-verb"].Add("sleeped");
 
-answers["nown"].Add("boy");
-answers["nown"].Add("dog");
-answers["nown"].Add("bear");
+answers["verb"].Add("run");
+answers["verb"].Add("feed");
+answers["verb"].Add("swim");
 
-answers["plural-nown"].Add("blue");
-answers["plural-nown"].Add("short");
-answers["plural-nown"].Add("young");
+answers["noun"].Add("boy");
+answers["noun"].Add("dog");
+answers["noun"].Add("bear");
 
-answers["place"].Add("blue");
-answers["place"].Add("short");
-answers["place"].Add("young");
+answers["plural-noun"].Add("cats");
+answers["plural-noun"].Add("geece");
+answers["plural-noun"].Add("birds");
 
-//Debug.Assert(categoryToWords["fruit"].Count == 2);
-//Debug.Assert(categoryToWords["day"].Count == 0);
+answers["place"].Add("New York City");
+answers["place"].Add("Sleepy Town");
+answers["place"].Add("Random Ahh City");
+
+        foreach (string filename in filenames) 
+        {
+            List<string> firstStory = new List<string>(File.ReadAllLines(filename));
+            ThePrintMethod(answers, firstStory);
+            Console.WriteLine("      ");
+        }
+        static void ThePrintMethod(Dictionary<string, List<string>> digitalInput, List<string> story)
+{
+    foreach (string line in story)
+    {
+    string[]wordsArray = line.Split(' ');
+    foreach (string word in wordsArray)
+    {
+        if (word.StartsWith("::"))
+        {
+            Random rand = new Random();
+            int number = rand.Next(3);
+            string cleanWord= word.TrimStart(':', ':');
+            string newWord = digitalInput[cleanWord][number];
+            Console.Write(newWord + " ");
+        } 
+        else
+        {
+            Console.Write(word + " ");
+        }
+            
+    }
+    }
+}
+ 
+}
+    }
+
